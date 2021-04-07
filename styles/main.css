@@ -18,11 +18,9 @@ main{
 p{
     max-width: 85em;
     font-family: 'Kiwi Maru', serif;
-    color: #657690;
+    color: #13151C;
 }
-#intro{
-    color: #657690;
-}
+
 b, br, li{
     font-family: 'Kiwi Maru', serif;
 }
@@ -171,4 +169,6 @@ body{
   #myBtn:hover {
     background-color: #555; /* Add a dark-grey background on hover */
   }
+  
+
   
