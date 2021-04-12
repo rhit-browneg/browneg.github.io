@@ -19,6 +19,7 @@ p{
     max-width: 85em;
     font-family: 'Kiwi Maru', serif;
     color: #13151C;
+    
 }
 
 b, br, li{
@@ -63,7 +64,7 @@ body{
     grid-template-rows: auto auto 1fr auto;
     background-color: #a8c5e7;
     background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
 }
 @media screen and (min-width: 25em) {
     body{
