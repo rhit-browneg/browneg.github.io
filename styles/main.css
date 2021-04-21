@@ -3,6 +3,7 @@
 body{
     font-size: 18px;
     line-height: 1.5;
+    width: 100%;
 }
 img#profile{
     height: 16em;
@@ -107,6 +108,12 @@ body > main{
     grid-area: main;
     margin-left: 100px;
     margin-right: 100px;
+}  body#portfolio ul#portfolioItems li img {
+    max-width: 100%;
+}
+
+body{
+    max-width: 85em;;
 }
 
 body > footer{
@@ -129,26 +136,42 @@ body#portfolio ul#portfolioItems {
     flex-wrap: wrap;
     flex: 1;
     list-style-type: none;
-    padding:0;
+    /* padding:0; */
+    flex-basis: 48%;
+    padding-right:2%;
    
 }
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (min-width: 25em){
     body#portfolio ul#portfolioItems li {
         flex-basis: 48%;
         padding-right:2%;
     }
-}
 
+
+    
+}
 
 body#portfolio ul#portfolioItems li img {
     max-width: 100%;
 }
-footer{
-    text-align: center;
-}
 body{
     max-width: 85em;;
+}
+
+
+footer{
+    text-align: center;
 }
 
 #myBtn {
