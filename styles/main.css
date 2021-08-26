@@ -1,14 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Monoton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Kiwi+Maru&family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Text+Me+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+/* Font stuff */
 body{
     font-size: 18px;
     line-height: 1.5;
     width: 100%;
-
-}
-main{
-    /* background-color: rgba(231,168,197, .8); */
-    background-color: rgba(244,189,186,.8);
 }
 p{
     max-width: 85em;
@@ -20,30 +18,31 @@ p{
 b, br, li{
     font-family: 'Kiwi Maru', serif;
 }
-body{
+
+body, a{
     font-family: 'Kiwi Maru', serif;
     color: #13151C;
 }
 
 h1,h2,h2{
     color: #13151C;
-    font-family: 'Annie Use Your Telescope', cursive;
+    /* font-family: 'DotGothic16', sans-serif; */
+    font-family: 'Text Me One', sans-serif;
 }
 
-a{
-    color: #13151C;
-    text-decoration-color: #F4BDBA;
+
+main{
+    /* background-color: rgba(231,168,197, .8); */
+    background-color: rgba(244,189,186,.8);
 }
-a:hover{
-    color: #F4BDBA;
-    /* text-decoration-color: #CAB7D7; */
-}
+
 body{
     /* background-color: #a8c5e7;
     background-image: url("https://www.transparenttextures.com/patterns/cartographer.png"); */
     background-image: url("C:/Users/browneg/OneDrive/Desktop/CSSE280/uhh/browneg.github.io/images/background.png");
 }
 
+/* SIDENAV */
 
 .bmd-layout-content{
     height: 100vh;
@@ -53,9 +52,32 @@ header{
     margin-top: 10px;
 }
 
-.bmd-layout-drawer>ul{
-    
+
+.navbar-brand{
+    align-content: center;
 }
+
+
+header:hover{
+    /* margin-top: 10px; */
+    cursor: pointer;
+}
+
+.bmd-layout-drawer>.list-group .list-group-item:hover {
+    font-weight: bolder;
+    cursor: pointer;
+    background-color: whitesmoke;
+}
+
+.bmd-layout-drawer>.list-group .list-group-item {
+    margin-top: 12px;
+    color: #13151C;
+}
+
+#menuAbout{
+    margin-top: 0;
+}
+
 
 .bmd-layout-drawer {
         /* background-color: #a8c5e7; */
@@ -63,5 +85,41 @@ header{
     background-image: url("https://www.transparenttextures.com/patterns/blizzard.png");
     max-width: 220px;
 }
+
+/* TABLE */
+
+table{
+background-color: rgba(224,255,153);
+height: 75vh;
+width: 950px;
+max-width: 900px;
+}
+
+
+
+.page-container{
+margin-top: 100px;
+} 
+
+#mainContent {
+margin-left: 220px;
+}
+
+#homeImage{
+    height: 75vh;
+}
+
+
+/* CENTER */
+.vertHorizCenter {
+margin: 0;
+position: absolute;
+top: 50%;
+left: 50%;
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+}
+
+
 
   

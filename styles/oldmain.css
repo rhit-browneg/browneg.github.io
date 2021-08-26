@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Kiwi+Maru&family=Monoton&display=swap');
+body{
+    font-size: 18px;
+    line-height: 1.5;
+    width: 100%;
+
+}
+img#profile{
+    height: 16em;
+    display: inline;
+    float: left;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+}
+main{
+    /* background-color: #F4BDBA; */
+    background-color: rgba(244,189,186,.8);
+}
+p{
+    max-width: 85em;
+    font-family: 'Kiwi Maru', serif;
+    color: #13151C;
+    
+}
+
+b, br, li{
+    font-family: 'Kiwi Maru', serif;
+}
+body{
+    
+    font-family: 'Kiwi Maru', serif;
+    color: #13151C;
+}
+h1,h2,h2{
+    color: #13151C;
+    font-family: 'Annie Use Your Telescope', cursive;
+}
+a{
+    color: #13151C;
+    text-decoration-color: #F4BDBA;
+}
+
+
+a:hover{
+    color: #F4BDBA;
+    /* text-decoration-color: #CAB7D7; */
+}
+
+#ev, #AP, #HB{
+    color: #13151C;
+    text-decoration-color: #657786;
+}
+
+#ev:hover, #AP:hover, #HB:hover{
+    color: #657786;
+    text-decoration-color: #657786;
+}
+
+body{
+    display: grid;
+    grid-template-areas: "head nav"
+                         "main main"
+                         "foot foot";
+    grid-template-columns: auto 4fr;
+    grid-template-rows: auto auto 1fr auto;
+    background-color: #a8c5e7;
+    background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+
+}
+@media screen and (min-width: 25em) {
+    body{
+        grid-template-areas: "head nav"
+                            "main main"
+                            "foot foot";
+                            grid-template-rows: auto 1fr auto;
+    }
+}
+
+body > *{
+    padding-left: 3rem;
+    padding-right: 3rem;
+ 
+}
+
+body > header{
+    grid-area: head;
+    padding-left: 100px;
+    
+}
+
+body > nav{
+    grid-area: nav;
+    
+}
+
+body > nav ul{
+    list-style-type: none;
+    padding: 30px;
+    
+    
+}
+body > nav ul li{
+    text-align: center;
+    display: inline-flex;
+    padding-right: 3rem ;
+}
+
+body > main{
+    grid-area: main;
+    margin-left: 100px;
+    margin-right: 100px;
+}  body#portfolio ul#portfolioItems li img {
+    max-width: 100%;
+}
+
+body{
+    max-width: 85em;;
+}
+
+body > footer{
+    
+    grid-area: foot;
+}
+
+header,footer{
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+
+}
+
+header h1, footer h1{
+    margin: 0;
+}
+
+body#portfolio ul#portfolioItems {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    list-style-type: none;
+    /* padding:0; */
+    flex-basis: 48%;
+    padding-right:2%;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 25em){
+    body#portfolio ul#portfolioItems li {
+        flex-basis: 48%;
+        padding-right:2%;
+    }
+
+
+    
+}
+
+body#portfolio ul#portfolioItems li img {
+    max-width: 100%;
+}
+body{
+    max-width: 85em;;
+}
+
+
+footer{
+    text-align: center;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #F4BDBA; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+  .scrollspy-example {
+    position: relative;
+    height: 200px;
+    overflow: auto;
+  }
+  
+
+  

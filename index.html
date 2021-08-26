@@ -1,41 +1,66 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title> Emma Brown's Personal Website</title>
-    <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/bootstrap-material-design.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
-    <link rel="stylesheet" href="styles/main.css" />
-    <link rel="icon" href="images/favicon.png" />
-  </head>
-  <body id = "about">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title> Emma Brown's Portfolio</title>
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/bootstrap-material-design.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="icon" href="images/favicon.png" />
+</head>
+
+<body id="about">
 
 
 
-    <!--SIDE NAV-->
-  
-    <div class="bmd-layout-container bmd-drawer-f-l bmd-drawer-overlay bmd-drawer-in">
-      <div id="dw-s2" class="bmd-layout-drawer bg-faded">
-        <header>
-          <a class="navbar-brand">Emma Brown</a>
-        </header>
-        <ul class="list-group">
-          <a id = "menuHome" class="list-group-item"><i class="material-icons">face</i>About</a>
-          <a id = "menuHome" class="list-group-item"><i class="material-icons">code</i>Portfolio</a>
-          <a id = "menuSignOut" class="list-group-item"><i class="material-icons">assignment</i>Resume</a>
-        </ul>
+  <!--SIDE NAV-->
+
+  <div class="bmd-layout-container bmd-drawer-f-l bmd-drawer-in">
+    <div id="dw-s2" class="bmd-layout-drawer bg-faded">
+      <header>
+        <a id="nameHeader" class="navbar-brand">Emma Brown</a> 
+      </header>
+      <ul class="list-group">
+        <a href="#" id="menuAbout" class="list-group-item"><i class="material-icons">face</i>About</a>
+        <a href="#" id="menuPortfolio" class="list-group-item"><i class="material-icons">code</i>Portfolio</a>
+        <a href="#" id="menuResume" class="list-group-item"><i class="material-icons">assignment</i>Resume</a>
+        <a href="#" id="menuContact" class="list-group-item"><i class="material-icons">question_answer</i>Contact</a>
+      </ul>
+    </div>
+    <main id="mainContent" class="bmd-layout-content">
+      <div id="introPage" class="container page-container">
+        <table class = "vertHorizCenter" cellspacing="0" cellpadding="0">
+          <tbody id = "imgBody">
+            <tr>
+              <td width = "8%">
+
+              </td>
+              <td id = "infoText">
+                <h1>
+                  Welcome, I'm Emma.
+                </h1>
+              </td>
+              <td align="right">
+                <img id = "homeImage" src="images/croppedimage.png" alt="">
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-      <main class="bmd-layout-content">
-  </main>
+    </main>
   </div>
 
 
   <script src="scripts/jquery.min.js"></script>
   <script src="scripts/popper.js"></script>
-    <script src="scripts/bootstrap-material-design.js"></script>
-    <script>$("body").bootstrapMaterialDesign();</script>
-    <script src="scripts/main.js"></script>
-  </body>
+  <script src="scripts/bootstrap-material-design.js"></script>
+  <script>
+    $("body").bootstrapMaterialDesign();
+  </script>
+  <script src="scripts/main.js"></script>
+</body>
+
 </html>
