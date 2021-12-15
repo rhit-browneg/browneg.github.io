@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"> 
+		<title> Lab11HB </title>
+	
+		<!-- Heather Bruck, Section Z1A, September 21, 2021 -->
+		<style>
+			body {background-color: #053101; 
+				color: white; 
+				font-family: times new roman; 
+				text-align: center 
+				}
+				
+			#heading { 
+				font-size: 35pt; 
+				background-color: white; 
+				color: #053101; 
+				margin: auto auto; 
+				padding: 15px
+				}
+			
+			#textofgame {
+				font-size: 20pt
+				}
+			
+			#info {
+				font-size: 16pt; 
+				width: 800px; 
+				margin: auto auto 
+				}
+			
+			#inputnumber {
+				height: 20px; 
+				width: 50px; 
+				margin: auto auto; 
+				padding: 5px
+				}
+			
+			#buttonlayout {position: absolute; 
+				width: 1200px; 
+				height: 200px
+				}
+			
+			#guessbutton {
+				position: absolute; 
+				left: 480px; 
+				top: 10px;
+				height: 50px; 
+				width: 120px; 
+				margin: auto auto; 
+				text-align: center; 
+				font-size: 12pt; 
+				padding: 10px
+				}
+				
+			#startbutton {
+				position: absolute; 
+				left: 660px; 
+				top: 10px;
+				height: 50px; 
+				width: 120px; 
+				text-align: center; 
+				font-size: 12pt
+				}
+		
+		
+		</style> 
+		
+		<script> 
+		var randomNum = Math.floor(Math.random() * 101); 
+			var guessNum = 0;
+			var guessLimit = 6; 
+			
+		function generateNumber ()
+		{
+		
+		console.log(randomNum);
+		
+                //Remove the loop within this method because it is causing it to run the inputted number 6 times,
+                //you only want it to run 1 time when the button is pressed.
+				// do { 
+				inputedGuess = document.getElementById('inputnumber').value; 
+                guessNum++
+				console.log("Guess is " + inputedGuess);
+					
+					if (inputedGuess == randomNum && inputedGuess < 6)
+						{
+						document.getElementById('rightorwrong').innerHTML='Congradulations!';
+						guessNum=5
+						}
+						
+					else if (guessNum >= 6 )
+						{ document.getElementById('rightorwrong').innerHTML='too many guesses'
+                        
+                        // This will disable the button for all guesses after 5
+                        document.getElementById('guessbutton').disabled = true;
+						}
+					else 
+						{
+						if (inputedGuess < randomNum) 
+						{
+						document.getElementById('rightorwrong').innerHTML='Your guess is too low';
+						}
+						if (inputedGuess > randomNum) 
+						{
+						document.getElementById('rightorwrong').innerHTML='Your guess is too high'; 
+						}
+						}
+                        console.log("Num tries: " + guessNum);
+					}
+					
+				// while (guessNum < guessLimit && inputedGuess != randomNum); 
+				// }
+				
+			
+			
+		
+			guessNum = 0; 
+			function startGame () 
+			{
+				randomNum = Math.floor(Math.random() * 101);
+
+                //Make sure the button is no longer disabled
+                document.getElementById('guessbutton').disabled = false;
+			}
+		
+		</script> 
+		
+	</head>
+	
+	<body> 
+		<h1 id="heading"> The Guessing Game </h1> 
+		
+		<h2 id="textofgame"> Guess a number between 1 and 100. </h2>
+		
+		<h2 id="info"> A random number between 0 and 100 has been generated. <br>Try to guess the number right in 5 tries! </h2>
+		
+		<br><br>
+		
+		<input type="text" id="inputnumber" size="10" > 
+		
+		<br><br>
+		
+		<div id="buttonlayout">
+		
+			<button id="guessbutton" type="button" onclick="generateNumber()"> GUESS </button>
+		
+			<button id="startbutton" type="button" onclick="startGame()"> START GAME OVER </button>
+		
+		</div>
+		<br> <br> <br> <br>
+		
+		<h2 id="rightorwrong"> Guesses remaining: 5 </h2>
+		
+		
+	
+	
+	
+	
+	
+	
+	</body> 
+</html>
